@@ -1,21 +1,51 @@
 # Turkce Nested Chunking Projesi
 
-Bu proje Turkce cumlelerde nested chunking, yani ic ice gecen isim obekleri
-(NP), eylem obekleri (VP), zarf obekleri (ADVP), ilgi cumlecikleri (RELCL) ve
-tumlec cumleciklerini (COMPCL) etiketlemek icin hazirlanmistir. Veri 5 sutunlu
-CoNLL bicimindedir ve her token icin uc ayri hedef etiket tutulur:
-`CHUNK-OUTER`, `CHUNK-INNER` ve `CLAUSE`.
+Bu proje, Turkce cumlelerde isim obekleri (NP), eylem obekleri (VP), zarf
+obekleri (ADVP), ic ice gecen ilgi cumlecikleri (RELCL) ve tumlec
+cumleciklerini (COMPCL) etiketlemek icin hazirlanmistir.
+
+Projede istatistiksel makine ogrenmesi yontemi olarak Conditional Random Fields
+(CRF) kullanilir. `CHUNK-OUTER`, `CHUNK-INNER` ve `CLAUSE` sutunlari icin uc ayri
+CRF modeli egitilir.
+
+## Proje Yapisi
+
+```text
+chunking_project/
+|-- data/
+|   |-- train.conll
+|   `-- test.conll
+|-- outputs/
+|   |-- outer_model.pkl
+|   |-- inner_model.pkl
+|   |-- clause_model.pkl
+|   |-- results_summary.txt
+|   |-- metrics_summary.csv
+|   |-- accuracy_summary.csv
+|   |-- evaluation_report.md
+|   |-- outer_confusion_matrix.png
+|   |-- inner_confusion_matrix.png
+|   |-- clause_confusion_matrix.png
+|   `-- all_confusion_matrices.png
+|-- src/
+|   |-- data_loader.py
+|   |-- features.py
+|   |-- train.py
+|   |-- evaluate.py
+|   `-- predict.py
+|-- requirements.txt
+`-- README.md
+```
 
 ## Veri Formati
 
-`data/train.conll` ve `data/test.conll` dosyalari su sutunlari kullanir:
+Veriler CoNLL formatindadir. Her satirda 5 sutun bulunur:
 
 ```text
 ID FORM CHUNK-OUTER CHUNK-INNER CLAUSE
 ```
 
-Cumleler bos satirla ayrilir. `_` etiketi ic chunk olmadigini, `O` etiketi ise
-ilgili tokenin chunk veya cumlecik disinda kaldigini gosterir.
+Cumleler bos satirla ayrilir.
 
 Ornek:
 
@@ -28,87 +58,97 @@ Ornek:
 6 ogrencinin I-NP _ O
 ```
 
-## Etiket Sutunlari
+## Etiketler
 
-`CHUNK-OUTER`: Dis chunk etiketidir. Bu projede `NP`, `VP`, `ADVP` ve `O`
-yapilari kullanilir. BIO bicimiyle `B-NP`, `I-NP`, `B-VP`, `I-VP`,
-`B-ADVP`, `I-ADVP` ve `O` etiketleri bulunur.
+- `B`: Isaretlemenin baslangicini gosterir.
+- `I`: Isaretlemenin devamini gosterir.
+- `_`: Ic chunk olmadigini gosterir.
+- `O`: Ilgili sutunda chunk veya cumlecik disinda kalan tokeni gosterir.
 
-`CHUNK-INNER`: Dis chunk icindeki ic obek etiketidir. Bu veri setinde ozellikle
-ilgi cumlecikleri `B-RELCL` ve `I-RELCL` olarak isaretlenir. Ic chunk yoksa `_`
-kullanilir.
+Sutunlar:
 
-`CLAUSE`: Cumlecik sinirlarini gosterir. Ilgi cumlecikleri `B-RELCL` /
-`I-RELCL`, tumlec cumlecikleri `B-COMPCL` / `I-COMPCL` olarak etiketlenir.
-Cumlecik disinda kalan tokenlar `O` alir.
-
-## Modelleme
-
-Proje isterlerinde izin verilen istatistiksel makine ogrenmesi yontemlerinden
-Conditional Random Fields (CRF) secilmistir. Sistem `sklearn-crfsuite`
-kutuphanesindeki CRF modelini kullanir. Ayni token ozellikleriyle uc ayri CRF
-modeli egitilir:
-
-- `outputs/outer_model.pkl`: `CHUNK_OUTER` tahmini
-- `outputs/inner_model.pkl`: `CHUNK_INNER` tahmini
-- `outputs/clause_model.pkl`: `CLAUSE` tahmini
-
-Ozellikler arasinda kelime, kucuk harf bicimi, ilk/son 2 ve 3 karakter,
-kelime uzunlugu, buyuk harfle baslama, tamamen buyuk olma, rakam ve noktalama
-bilgisi, onceki/sonraki kelime bilgileri ile cumle basi/sonu bilgisi vardir.
+- `CHUNK-OUTER`: Dis obek etiketi. `NP`, `VP`, `ADVP`, `O` kullanilir.
+- `CHUNK-INNER`: Ic obek etiketi. Bu projede ozellikle `RELCL` kullanilir.
+- `CLAUSE`: Cumlecik etiketi. `RELCL`, `COMPCL`, `O` kullanilir.
 
 ## Kurulum
 
-```bash
+VS Code terminalinde proje klasorune girin:
+
+```powershell
+cd "...\chunking_project"
+```
+
+Gerekli kutuphaneleri kurun:
+
+```powershell
 pip install -r requirements.txt
 ```
 
 ## Egitim
 
-```bash
-python src/train.py
+```powershell
+python src\train.py
 ```
 
-Bu komut `data/train.conll` dosyasini yukler, uc CRF modelini egitir ve
-modelleri `outputs` klasorune kaydeder. Egitim sonunda her model icin kullanilan
-etiketler terminalde yazdirilir.
+Bu komut `data/train.conll` dosyasini okur ve uc ayri model olusturur:
+
+- `outputs/outer_model.pkl`
+- `outputs/inner_model.pkl`
+- `outputs/clause_model.pkl`
 
 ## Degerlendirme
 
-```bash
-python src/evaluate.py
+```powershell
+python src\evaluate.py
 ```
 
-Degerlendirme `data/test.conll` uzerinde uc modeli ayri ayri calistirir ve su
-ciktilari uretir:
+Bu komut `data/test.conll` dosyasinda modelleri test eder. Terminalde
+precision, recall, f-measure ve genel model accuracy degerleri gosterilir.
 
-- `outputs/outer_classification_report.txt`
-- `outputs/inner_classification_report.txt`
-- `outputs/clause_classification_report.txt`
-- `outputs/outer_confusion_matrix.png`
-- `outputs/inner_confusion_matrix.png`
-- `outputs/clause_confusion_matrix.png`
+Uretilen onemli output dosyalari:
+
+- `outputs/results_summary.txt`
+- `outputs/metrics_summary.csv`
+- `outputs/accuracy_summary.csv`
 - `outputs/evaluation_report.md`
 - `outputs/nested_predictions.conll`
 
-`evaluation_report.md` dosyasi her hedef sutun icin precision, recall,
-f1-score, support, accuracy ve confusion matrix grafiklerini birlikte aciklar.
+Confusion matrix grafikleri:
 
-`nested_predictions.conll` dosyasi su formattadir:
-
-```text
-ID FORM GOLD_OUTER PRED_OUTER GOLD_INNER PRED_INNER GOLD_CLAUSE PRED_CLAUSE
-```
+- `outputs/outer_confusion_matrix.png`
+- `outputs/inner_confusion_matrix.png`
+- `outputs/clause_confusion_matrix.png`
+- `outputs/all_confusion_matrices.png`
 
 ## Tahmin
 
-```bash
-python src/predict.py
+```powershell
+python src\predict.py
 ```
 
-Komut calisinca kullanicidan Turkce bir cumle alinir, tokenlara ayrilir ve her
-token icin su formatta nested chunking tahmini yazdirilir:
+Komut calistiktan sonra Turkce bir cumle girilir. Cikti su formatta verilir:
 
 ```text
 ID FORM CHUNK-OUTER CHUNK-INNER CLAUSE
 ```
+
+Ornek cumle:
+
+```text
+Dun aksam toplantidan erken cikan ogrencinin makaleyi okudugunu fark ettim.
+```
+
+## Dosyalarin Gorevi
+
+- `src/data_loader.py`: 5 sutunlu CoNLL verisini okur.
+- `src/features.py`: CRF modeli icin kelime ozelliklerini cikarir.
+- `src/train.py`: Uc ayri CRF modelini egitir.
+- `src/evaluate.py`: Modelleri test eder, metrikleri ve confusion matrix grafiklerini uretir.
+- `src/predict.py`: Kullanici cumlesi icin nested chunking tahmini yapar.
+
+## Not
+
+Veri seti egitim amaclidir ve kucuk olceklidir. Bu nedenle bazi etiketlerde
+basari dusuk cikabilir. Kod, veri formati ve raporlama akisi proje isterlerini
+karsilayacak sekilde hazirlanmistir.
