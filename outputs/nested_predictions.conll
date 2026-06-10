@@ -1,0 +1,87 @@
+# columns = ID FORM GOLD_OUTER PRED_OUTER GOLD_INNER PRED_INNER GOLD_CLAUSE PRED_CLAUSE
+1 Sabah B-ADVP B-NP _ _ O O
+2 erken I-ADVP I-NP _ B-RELCL O B-RELCL
+3 kalkan B-NP I-NP B-RELCL I-RELCL B-RELCL I-RELCL
+4 öğrenci I-NP I-NP _ _ O O
+5 kütüphaneye B-NP B-NP _ _ O O
+6 gitti B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Ali B-NP B-NP _ _ O O
+2 okula B-NP B-NP _ _ O O
+3 koşarak B-ADVP B-ADVP _ _ O O
+4 gitti B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 Öğretmen B-NP B-NP _ B-RELCL O B-RELCL
+2 önerdiği B-NP B-NP B-RELCL I-RELCL B-RELCL I-RELCL
+3 makaleyi I-NP I-NP _ _ O O
+4 sınıfta B-NP B-ADVP _ _ O O
+5 tartıştı B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 Ben B-NP B-NP _ _ O O
+2 okuduğunu B-VP B-NP _ _ B-COMPCL O
+3 hemen B-ADVP B-ADVP _ _ O O
+4 fark B-VP B-VP _ _ O O
+5 ettim I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 Dün B-ADVP B-ADVP _ _ O O
+2 akşam I-ADVP I-ADVP _ _ O O
+3 toplantıdan B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 erken I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 çıkan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+6 öğrencinin I-NP I-NP _ _ O O
+7 çantasını B-NP B-VP _ _ O O
+8 buldum B-VP B-VP _ _ O O
+9 . O O _ _ O O
+
+1 Hocasının B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 anlattığı I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 konu I-NP I-NP _ _ O O
+4 öğrencilere B-NP I-NP _ _ O O
+5 zor B-NP B-ADVP _ _ O O
+6 geldi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Ayşe B-NP B-NP _ _ O O
+2 kitabı B-NP B-NP _ _ O O
+3 dikkatlice B-ADVP B-ADVP _ _ O O
+4 okudu B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 Murat B-NP B-NP _ _ O O
+2 geldiğini B-VP B-VP _ _ B-COMPCL O
+3 düşündüm B-VP B-VP _ _ O O
+4 . O O _ _ O O
+
+1 Kapıyı B-NP B-NP _ _ O O
+2 sessizce B-ADVP B-ADVP _ _ O O
+3 kapatan B-NP B-NP B-RELCL _ B-RELCL O
+4 çocuk I-NP I-NP _ _ O O
+5 odadan B-NP B-ADVP _ _ O O
+6 çıktı B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Doktor B-NP B-NP _ _ O O
+2 hastayı B-NP B-NP _ _ O O
+3 bugün B-ADVP B-ADVP _ _ O O
+4 muayene B-VP B-VP _ _ O O
+5 etti I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 Araştırmacı B-NP B-NP _ _ O O
+2 bulduğu B-NP B-NP B-RELCL _ B-RELCL O
+3 sonuçları I-NP I-NP _ _ O O
+4 ayrıntılı B-ADVP B-ADVP _ _ O O
+5 biçimde I-ADVP I-ADVP _ _ O O
+6 açıkladı B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Müdür B-NP B-NP _ _ O O
+2 raporun B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 tamamlandığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+4 söyledi B-VP B-VP _ _ O O
+5 . O O _ _ O O
+

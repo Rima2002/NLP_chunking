@@ -1,0 +1,335 @@
+# columns = ID FORM CHUNK-OUTER CHUNK-INNER CLAUSE
+1 Dün B-ADVP _ O
+2 akşam I-ADVP _ O
+3 toplantıdan B-NP B-RELCL B-RELCL
+4 erken I-NP I-RELCL I-RELCL
+5 çıkan I-NP I-RELCL I-RELCL
+6 öğrencinin I-NP _ O
+7 , O _ O
+8 hocasının B-NP B-RELCL B-RELCL
+9 önerdiği I-NP I-RELCL I-RELCL
+10 makaleyi I-NP _ O
+11 kütüphanede B-NP _ B-COMPCL
+12 dikkatlice B-ADVP _ I-COMPCL
+13 okuduğunu B-VP _ I-COMPCL
+14 fark B-VP _ O
+15 ettim I-VP _ O
+16 . O _ O
+
+1 Ali B-NP _ O
+2 okula B-NP _ O
+3 hızlıca B-ADVP _ O
+4 gitti B-VP _ O
+5 . O _ O
+
+1 Ayşe B-NP _ O
+2 kitabı B-NP _ O
+3 dikkatlice B-ADVP _ O
+4 okudu B-VP _ O
+5 . O _ O
+
+1 Öğretmen B-NP _ O
+2 öğrencilere B-NP _ O
+3 konuyu B-NP _ O
+4 açıkça B-ADVP _ O
+5 anlattı B-VP _ O
+6 . O _ O
+
+1 Erken B-NP B-RELCL B-RELCL
+2 çıkan I-NP I-RELCL I-RELCL
+3 öğrenci I-NP _ O
+4 servise B-NP _ O
+5 zamanında B-ADVP _ O
+6 yetişti B-VP _ O
+7 . O _ O
+
+1 Hocasının B-NP B-RELCL B-RELCL
+2 anlattığı I-NP I-RELCL I-RELCL
+3 konu I-NP _ O
+4 sınavda B-ADVP _ O
+5 çıktı B-VP _ O
+6 . O _ O
+
+1 Öğrenci B-NP _ O
+2 öğretmenin B-NP B-RELCL B-RELCL
+3 önerdiği I-NP I-RELCL I-RELCL
+4 makale I-NP _ O
+5 hakkında O _ O
+6 konuştu B-VP _ O
+7 . O _ O
+
+1 Ben B-NP _ O
+2 onun B-NP _ B-COMPCL
+3 geldiğini B-VP _ I-COMPCL
+4 düşündüm B-VP _ O
+5 . O _ O
+
+1 Onun B-NP _ B-COMPCL
+2 okuduğunu B-VP _ I-COMPCL
+3 fark B-VP _ O
+4 ettim I-VP _ O
+5 . O _ O
+
+1 Çocuk B-NP _ O
+2 bahçede B-NP _ O
+3 hızlıca B-ADVP _ O
+4 koştu B-VP _ O
+5 . O _ O
+
+1 Mühendis B-NP _ O
+2 tasarladığı B-NP B-RELCL B-RELCL
+3 köprüyü I-NP _ O
+4 yeniden B-ADVP _ O
+5 inceledi B-VP _ O
+6 . O _ O
+
+1 Doktor B-NP _ O
+2 hastanın B-NP _ B-COMPCL
+3 iyileştiğini B-VP _ I-COMPCL
+4 duyunca O _ O
+5 sevindi B-VP _ O
+6 . O _ O
+
+1 Arkadaşım B-NP _ O
+2 yarın B-ADVP _ O
+3 sabah I-ADVP _ O
+4 geleceğini B-VP _ B-COMPCL
+5 söyledi B-VP _ O
+6 . O _ O
+
+1 Biz B-NP _ O
+2 projenin B-NP _ B-COMPCL
+3 başarılı B-NP _ I-COMPCL
+4 olduğunu B-VP _ I-COMPCL
+5 gördük B-VP _ O
+6 . O _ O
+
+1 Kedi B-NP _ O
+2 sessizce B-ADVP _ O
+3 kapının B-NP _ O
+4 yanına I-NP _ O
+5 oturdu B-VP _ O
+6 . O _ O
+
+1 Genç B-NP _ O
+2 araştırmacı I-NP _ O
+3 bulduğu B-NP B-RELCL B-RELCL
+4 verileri I-NP _ O
+5 titizlikle B-ADVP _ O
+6 inceledi B-VP _ O
+7 . O _ O
+
+1 Müdür B-NP _ O
+2 raporu B-NP _ O
+3 hemen B-ADVP _ O
+4 imzaladı B-VP _ O
+5 . O _ O
+
+1 Yağmur B-NP _ O
+2 başlayınca O _ O
+3 çocuklar B-NP _ O
+4 koşarak B-ADVP _ O
+5 eve B-NP _ O
+6 döndü B-VP _ O
+7 . O _ O
+
+1 Uzun B-NP _ O
+2 yolculuktan I-NP _ O
+3 sonra O _ O
+4 yolcular B-NP _ O
+5 sessizce B-ADVP _ O
+6 dinlendi B-VP _ O
+7 . O _ O
+
+1 Sekreter B-NP _ O
+2 müdürün B-NP B-RELCL B-RELCL
+3 istediği I-NP I-RELCL I-RELCL
+4 dosyayı I-NP _ O
+5 masaya B-NP _ O
+6 bıraktı B-VP _ O
+7 . O _ O
+
+1 Öğretmenin B-NP B-RELCL B-RELCL
+2 verdiği I-NP I-RELCL I-RELCL
+3 ödev I-NP _ O
+4 çok B-ADVP _ O
+5 zor B-NP _ O
+6 göründü B-VP _ O
+7 . O _ O
+
+1 Ali B-NP _ O
+2 dersi B-NP _ B-COMPCL
+3 iyi B-ADVP _ I-COMPCL
+4 anladığını B-VP _ I-COMPCL
+5 söyledi B-VP _ O
+6 . O _ O
+
+1 Annem B-NP _ O
+2 yemeğin B-NP _ B-COMPCL
+3 piştiğini B-VP _ I-COMPCL
+4 haber B-VP _ O
+5 verdi I-VP _ O
+6 . O _ O
+
+1 Takım B-NP _ O
+2 maçı B-NP _ O
+3 son B-ADVP _ O
+4 dakikada I-ADVP _ O
+5 kazandı B-VP _ O
+6 . O _ O
+
+1 Öğrenciler B-NP _ O
+2 sınıfta B-NP _ O
+3 sessizce B-ADVP _ O
+4 çalışıyor B-VP _ O
+5 . O _ O
+
+1 Kapıyı B-NP _ O
+2 yavaşça B-ADVP _ O
+3 açan B-NP B-RELCL B-RELCL
+4 adam I-NP _ O
+5 içeri B-ADVP _ O
+6 girdi B-VP _ O
+7 . O _ O
+
+1 Defne B-NP _ O
+2 yazdığı B-NP B-RELCL B-RELCL
+3 şiiri I-NP _ O
+4 arkadaşlarına B-NP _ O
+5 okudu B-VP _ O
+6 . O _ O
+
+1 Komisyon B-NP _ O
+2 başvuruların B-NP _ B-COMPCL
+3 arttığını B-VP _ I-COMPCL
+4 açıkladı B-VP _ O
+5 . O _ O
+
+1 Gazeteci B-NP _ O
+2 tanığın B-NP B-RELCL B-RELCL
+3 gördüğü I-NP I-RELCL I-RELCL
+4 olayı I-NP _ O
+5 ayrıntılı B-ADVP _ O
+6 biçimde I-ADVP _ O
+7 yazdı B-VP _ O
+8 . O _ O
+
+1 Küçük B-NP _ O
+2 kız I-NP _ O
+3 parkta B-NP _ O
+4 neşeyle B-ADVP _ O
+5 oynadı B-VP _ O
+6 . O _ O
+
+1 Saat B-NP B-RELCL B-RELCL
+2 dokuzda I-NP I-RELCL I-RELCL
+3 başlayan I-NP I-RELCL I-RELCL
+4 toplantı I-NP _ O
+5 geç B-ADVP _ O
+6 bitti B-VP _ O
+7 . O _ O
+
+1 Öğrenci B-NP _ O
+2 soruyu B-NP _ B-COMPCL
+3 hızlı B-ADVP _ I-COMPCL
+4 çözdüğünü B-VP _ I-COMPCL
+5 belirtti B-VP _ O
+6 . O _ O
+
+1 Babam B-NP _ O
+2 arabanın B-NP _ B-COMPCL
+3 bozulduğunu B-VP _ I-COMPCL
+4 düşündü B-VP _ O
+5 . O _ O
+
+1 Polis B-NP _ O
+2 kaçan B-NP B-RELCL B-RELCL
+3 sürücüyü I-NP _ O
+4 kısa B-ADVP _ O
+5 sürede I-ADVP _ O
+6 yakaladı B-VP _ O
+7 . O _ O
+
+1 Yeni B-NP B-RELCL B-RELCL
+2 gelen I-NP I-RELCL I-RELCL
+3 öğretmen I-NP _ O
+4 konuyu B-NP _ O
+5 açıkça B-ADVP _ O
+6 anlattı B-VP _ O
+7 . O _ O
+
+1 Ömer B-NP _ O
+2 pazardan B-NP _ O
+3 taze B-NP _ O
+4 meyve I-NP _ O
+5 aldı B-VP _ O
+6 . O _ O
+
+1 Araştırma B-NP _ O
+2 sonuçlarının I-NP _ B-COMPCL
+3 önemli I-NP _ I-COMPCL
+4 olduğunu B-VP _ I-COMPCL
+5 gösterdi B-VP _ O
+6 . O _ O
+
+1 Çalışanlar B-NP _ O
+2 erken B-ADVP _ O
+3 bitirilen B-NP B-RELCL B-RELCL
+4 işleri I-NP _ O
+5 teslim B-VP _ O
+6 etti I-VP _ O
+7 . O _ O
+
+1 Mahallede B-NP B-RELCL B-RELCL
+2 yaşayan I-NP I-RELCL I-RELCL
+3 yaşlı I-NP _ O
+4 kadın I-NP _ O
+5 her B-ADVP _ O
+6 sabah I-ADVP _ O
+7 yürür B-VP _ O
+8 . O _ O
+
+1 Sınava B-NP B-RELCL B-RELCL
+2 hazırlanan I-NP I-RELCL I-RELCL
+3 öğrenciler I-NP _ O
+4 gece B-ADVP _ O
+5 geç I-ADVP _ O
+6 saatlere I-ADVP _ O
+7 kadar I-ADVP _ O
+8 çalıştı B-VP _ O
+9 . O _ O
+
+1 Yönetici B-NP _ O
+2 ekibin B-NP _ B-COMPCL
+3 zamanında B-ADVP _ I-COMPCL
+4 geleceğini B-VP _ I-COMPCL
+5 umdu B-VP _ O
+6 . O _ O
+
+1 Yazar B-NP _ O
+2 okurların B-NP B-RELCL B-RELCL
+3 beğendiği I-NP I-RELCL I-RELCL
+4 romanı I-NP _ O
+5 yeniden B-ADVP _ O
+6 yayımladı B-VP _ O
+7 . O _ O
+
+1 Çiftçi B-NP _ O
+2 tarlada B-NP _ O
+3 erken B-ADVP _ O
+4 çalışmaya B-VP _ O
+5 başladı I-VP _ O
+6 . O _ O
+
+1 Hasta B-NP _ O
+2 ilaçları B-NP _ B-COMPCL
+3 düzenli B-ADVP _ I-COMPCL
+4 aldığını B-VP _ I-COMPCL
+5 söyledi B-VP _ O
+6 . O _ O
+
+1 Kardeşim B-NP _ O
+2 seni B-NP _ O
+3 aramayı B-VP _ O
+4 unuttu I-VP _ O
+5 . O _ O

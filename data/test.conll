@@ -1,0 +1,86 @@
+# columns = ID FORM CHUNK-OUTER CHUNK-INNER CLAUSE
+1 Sabah B-ADVP _ O
+2 erken I-ADVP _ O
+3 kalkan B-NP B-RELCL B-RELCL
+4 öğrenci I-NP _ O
+5 kütüphaneye B-NP _ O
+6 gitti B-VP _ O
+7 . O _ O
+
+1 Ali B-NP _ O
+2 okula B-NP _ O
+3 koşarak B-ADVP _ O
+4 gitti B-VP _ O
+5 . O _ O
+
+1 Öğretmen B-NP _ O
+2 önerdiği B-NP B-RELCL B-RELCL
+3 makaleyi I-NP _ O
+4 sınıfta B-NP _ O
+5 tartıştı B-VP _ O
+6 . O _ O
+
+1 Ben B-NP _ O
+2 okuduğunu B-VP _ B-COMPCL
+3 hemen B-ADVP _ O
+4 fark B-VP _ O
+5 ettim I-VP _ O
+6 . O _ O
+
+1 Dün B-ADVP _ O
+2 akşam I-ADVP _ O
+3 toplantıdan B-NP B-RELCL B-RELCL
+4 erken I-NP I-RELCL I-RELCL
+5 çıkan I-NP I-RELCL I-RELCL
+6 öğrencinin I-NP _ O
+7 çantasını B-NP _ O
+8 buldum B-VP _ O
+9 . O _ O
+
+1 Hocasının B-NP B-RELCL B-RELCL
+2 anlattığı I-NP I-RELCL I-RELCL
+3 konu I-NP _ O
+4 öğrencilere B-NP _ O
+5 zor B-NP _ O
+6 geldi B-VP _ O
+7 . O _ O
+
+1 Ayşe B-NP _ O
+2 kitabı B-NP _ O
+3 dikkatlice B-ADVP _ O
+4 okudu B-VP _ O
+5 . O _ O
+
+1 Murat B-NP _ O
+2 geldiğini B-VP _ B-COMPCL
+3 düşündüm B-VP _ O
+4 . O _ O
+
+1 Kapıyı B-NP _ O
+2 sessizce B-ADVP _ O
+3 kapatan B-NP B-RELCL B-RELCL
+4 çocuk I-NP _ O
+5 odadan B-NP _ O
+6 çıktı B-VP _ O
+7 . O _ O
+
+1 Doktor B-NP _ O
+2 hastayı B-NP _ O
+3 bugün B-ADVP _ O
+4 muayene B-VP _ O
+5 etti I-VP _ O
+6 . O _ O
+
+1 Araştırmacı B-NP _ O
+2 bulduğu B-NP B-RELCL B-RELCL
+3 sonuçları I-NP _ O
+4 ayrıntılı B-ADVP _ O
+5 biçimde I-ADVP _ O
+6 açıkladı B-VP _ O
+7 . O _ O
+
+1 Müdür B-NP _ O
+2 raporun B-NP _ B-COMPCL
+3 tamamlandığını B-VP _ I-COMPCL
+4 söyledi B-VP _ O
+5 . O _ O
