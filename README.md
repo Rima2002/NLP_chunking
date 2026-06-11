@@ -47,6 +47,10 @@ ID FORM CHUNK-OUTER CHUNK-INNER CLAUSE
 
 Cümleler boş satırla ayrılır.
 
+Bu sürümde veri seti toplam 400 cümle örneğine genişletilmiştir. Bu örneklerin
+320 tanesi eğitim için `data/train.conll`, 80 tanesi test için `data/test.conll`
+dosyasına ayrılmıştır.
+
 Örnek:
 
 ```text
@@ -146,9 +150,11 @@ Dün akşam toplantıdan erken çıkan öğrencinin makaleyi okuduğunu fark ett
 - `src/train.py`: Üç ayrı CRF modelini eğitir.
 - `src/evaluate.py`: Modelleri test eder, metrikleri ve confusion matrix grafiklerini üretir.
 - `src/predict.py`: Kullanıcı cümlesi için nested chunking tahmini yapar.
+- `scripts/generate_dataset.py`: 400 cümlelik eğitim/test veri setini deterministik olarak üretir.
 
 ## Not
 
-Veri seti eğitim amaçlıdır ve küçük ölçeklidir. Bu nedenle bazı etiketlerde
-başarı düşük çıkabilir. Kod, veri formatı ve raporlama akışı proje isterlerini
-karşılayacak şekilde hazırlanmıştır.
+Veri seti eğitim amaçlı olarak genişletilmiş örneklerden oluşur. Bu nedenle
+başarı oranları gerçek bir dış corpus üzerindeki performans yerine, hazırlanan
+etiketleme şablonları üzerindeki model davranışını gösterir. Kod, veri formatı
+ve raporlama akışı proje isterlerini karşılayacak şekilde hazırlanmıştır.

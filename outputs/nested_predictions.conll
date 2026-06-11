@@ -1,87 +1,624 @@
 # columns = ID FORM GOLD_OUTER PRED_OUTER GOLD_INNER PRED_INNER GOLD_CLAUSE PRED_CLAUSE
-1 Sabah B-ADVP B-NP _ _ O O
-2 erken I-ADVP I-NP _ B-RELCL O B-RELCL
-3 kalkan B-NP I-NP B-RELCL I-RELCL B-RELCL I-RELCL
-4 öğrenci I-NP I-NP _ _ O O
-5 kütüphaneye B-NP B-NP _ _ O O
-6 gitti B-VP B-VP _ _ O O
+1 bugün B-ADVP B-ADVP _ _ O O
+2 öğleden I-ADVP I-ADVP _ _ O O
+3 sonra I-ADVP I-ADVP _ _ O O
+4 danışmanın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+5 değerlendirdiği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+6 makaleyi I-NP I-NP _ _ O O
+7 Yazar B-NP B-NP _ _ O O
+8 sessizce B-ADVP B-ADVP _ _ O O
+9 inceledi B-VP B-VP _ _ O O
+10 . O O _ _ O O
+
+1 dosyayı B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 titizlikle I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 düzenleyen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 uzman I-NP I-NP _ _ O O
+5 okulda B-NP B-NP _ _ O O
+6 tamamladı B-VP B-VP _ _ O O
 7 . O O _ _ O O
 
-1 Ali B-NP B-NP _ _ O O
-2 okula B-NP B-NP _ _ O O
-3 koşarak B-ADVP B-ADVP _ _ O O
-4 gitti B-VP B-VP _ _ O O
-5 . O O _ _ O O
+1 Gazeteci B-NP B-NP _ _ O O
+2 planın B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 gerekli B-NP B-NP _ _ I-COMPCL I-COMPCL
+4 olduğunu B-VP B-VP _ _ I-COMPCL I-COMPCL
+5 hemen B-ADVP B-ADVP _ _ O O
+6 gördük B-VP B-VP _ _ O O
+7 . O O _ _ O O
 
-1 Öğretmen B-NP B-NP _ B-RELCL O B-RELCL
-2 önerdiği B-NP B-NP B-RELCL I-RELCL B-RELCL I-RELCL
-3 makaleyi I-NP I-NP _ _ O O
-4 sınıfta B-NP B-ADVP _ _ O O
-5 tartıştı B-VP B-VP _ _ O O
-6 . O O _ _ O O
+1 metni B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 hemen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 hazırlayan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 uzman I-NP I-NP _ _ O O
+5 ofiste B-NP B-NP _ _ O O
+6 anlattı B-VP B-VP _ _ O O
+7 . O O _ _ O O
 
-1 Ben B-NP B-NP _ _ O O
-2 okuduğunu B-VP B-NP _ _ B-COMPCL O
-3 hemen B-ADVP B-ADVP _ _ O O
-4 fark B-VP B-VP _ _ O O
-5 ettim I-VP I-VP _ _ O O
-6 . O O _ _ O O
-
-1 Dün B-ADVP B-ADVP _ _ O O
+1 dün B-ADVP B-ADVP _ _ O O
 2 akşam I-ADVP I-ADVP _ _ O O
-3 toplantıdan B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
-4 erken I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
-5 çıkan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
-6 öğrencinin I-NP I-NP _ _ O O
-7 çantasını B-NP B-VP _ _ O O
-8 buldum B-VP B-VP _ _ O O
-9 . O O _ _ O O
+3 Programcı B-NP B-NP _ _ O O
+4 toplantıya B-NP B-NP _ _ O O
+5 yaklaştı B-VP B-VP _ _ O O
+6 . O O _ _ O O
 
-1 Hocasının B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
-2 anlattığı I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
-3 konu I-NP I-NP _ _ O O
-4 öğrencilere B-NP I-NP _ _ O O
-5 zor B-NP B-ADVP _ _ O O
-6 geldi B-VP B-VP _ _ O O
+1 sonuçları B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 sakince I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 anlatan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 mühendis I-NP I-NP _ _ O O
+5 ofiste B-NP B-NP _ _ O O
+6 sundu B-VP B-VP _ _ O O
 7 . O O _ _ O O
 
-1 Ayşe B-NP B-NP _ _ O O
-2 kitabı B-NP B-NP _ _ O O
-3 dikkatlice B-ADVP B-ADVP _ _ O O
-4 okudu B-VP B-VP _ _ O O
+1 bu B-ADVP B-ADVP _ _ O O
+2 sabah I-ADVP I-ADVP _ _ O O
+3 öğretmenin B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 bulduğu I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 metni I-NP I-NP _ _ O O
+6 modelin B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 bittiğini B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 yardım B-VP B-VP _ _ O O
+9 etti I-VP I-VP _ _ O O
+10 . O O _ _ O O
+
+1 bu B-ADVP B-ADVP _ _ O O
+2 sabah I-ADVP I-ADVP _ _ O O
+3 Hemşire B-NP B-NP _ _ O O
+4 başvuruyu B-NP B-NP _ _ O O
+5 yarın B-ADVP B-ADVP _ _ O O
+6 inceledi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Çocuk B-NP B-NP _ _ O O
+2 taslağı B-NP B-NP _ _ O O
+3 açıkça B-ADVP B-ADVP _ _ O O
+4 hazırladı B-VP B-VP _ _ O O
 5 . O O _ _ O O
 
-1 Murat B-NP B-NP _ _ O O
-2 geldiğini B-VP B-VP _ _ B-COMPCL O
-3 düşündüm B-VP B-VP _ _ O O
-4 . O O _ _ O O
+1 bu B-ADVP B-ADVP _ _ O O
+2 sabah I-ADVP I-ADVP _ _ O O
+3 komisyonun B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 seçtiği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 metni I-NP I-NP _ _ O O
+6 başvurunun B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 hazırlandığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 kontrol B-VP B-VP _ _ O O
+9 etti I-VP I-VP _ _ O O
+10 . O O _ _ O O
 
-1 Kapıyı B-NP B-NP _ _ O O
-2 sessizce B-ADVP B-ADVP _ _ O O
-3 kapatan B-NP B-NP B-RELCL _ B-RELCL O
-4 çocuk I-NP I-NP _ _ O O
-5 odadan B-NP B-ADVP _ _ O O
-6 çıktı B-VP B-VP _ _ O O
-7 . O O _ _ O O
-
-1 Doktor B-NP B-NP _ _ O O
-2 hastayı B-NP B-NP _ _ O O
-3 bugün B-ADVP B-ADVP _ _ O O
-4 muayene B-VP B-VP _ _ O O
+1 Müdür B-NP B-NP _ _ O O
+2 başvuruyu B-NP B-NP _ _ O O
+3 sakince B-ADVP B-ADVP _ _ O O
+4 fark B-VP B-VP _ _ O O
 5 etti I-VP I-VP _ _ O O
 6 . O O _ _ O O
 
-1 Araştırmacı B-NP B-NP _ _ O O
-2 bulduğu B-NP B-NP B-RELCL _ B-RELCL O
-3 sonuçları I-NP I-NP _ _ O O
-4 ayrıntılı B-ADVP B-ADVP _ _ O O
-5 biçimde I-ADVP I-ADVP _ _ O O
-6 açıkladı B-VP B-VP _ _ O O
+1 dosyayı B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 yeniden I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 okuyan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 yazar I-NP I-NP _ _ O O
+5 salonda B-NP B-NP _ _ O O
+6 inceledi B-VP B-VP _ _ O O
 7 . O O _ _ O O
 
-1 Müdür B-NP B-NP _ _ O O
-2 raporun B-NP B-NP _ _ B-COMPCL B-COMPCL
-3 tamamlandığını B-VP B-VP _ _ I-COMPCL I-COMPCL
-4 söyledi B-VP B-VP _ _ O O
+1 Hemşire B-NP B-NP _ _ O O
+2 verileri B-NP B-NP _ _ O O
+3 yarın B-ADVP B-ADVP _ _ O O
+4 yardım B-VP B-VP _ _ O O
+5 etti I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 akşam B-ADVP B-ADVP _ _ O O
+2 geç I-ADVP I-ADVP _ _ O O
+3 yazarın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 sunduğu I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 projeyi I-NP I-NP _ _ O O
+6 toplantının B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 bittiğini B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 teslim B-VP B-VP _ _ O O
+9 etti I-VP I-VP _ _ O O
+10 . O O _ _ O O
+
+1 akşam B-ADVP B-ADVP _ _ O O
+2 geç I-ADVP I-ADVP _ _ O O
+3 Yazar B-NP B-NP _ _ O O
+4 bahçeye B-NP B-NP _ _ O O
+5 döndü B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 öğrencinin B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 incelediği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 konuyu I-NP I-NP _ _ O O
+4 Sekreter B-NP B-NP _ _ O O
+5 yarın B-ADVP B-ADVP _ _ O O
+6 tamamladı B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 bugün B-ADVP B-ADVP _ _ O O
+2 öğleden I-ADVP I-ADVP _ _ O O
+3 sonra I-ADVP I-ADVP _ _ O O
+4 hocanın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+5 bulduğu I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+6 makaleyi I-NP I-NP _ _ O O
+7 dosyanın B-NP B-NP _ _ B-COMPCL B-COMPCL
+8 başladığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+9 yardım B-VP B-VP _ _ O O
+10 etti I-VP I-VP _ _ O O
+11 . O O _ _ O O
+
+1 notları B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 sakince I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 anlatan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 çocuk I-NP I-NP _ _ O O
+5 laboratuvarda B-NP B-NP _ _ O O
+6 sundu B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 yarın B-ADVP B-ADVP _ _ O O
+2 sabah I-ADVP I-ADVP _ _ O O
+3 gazetecinin B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 geliştirdiği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 dosyayı I-NP I-NP _ _ O O
+6 dosyanın B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 bittiğini B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 kayıt B-VP B-VP _ _ O O
+9 yaptı I-VP I-VP _ _ O O
+10 . O O _ _ O O
+
+1 metni B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 sessizce I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 düzenleyen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 uzman I-NP I-NP _ _ O O
+5 sınıfta B-NP B-NP _ _ O O
+6 yetişti B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 dün B-ADVP B-ADVP _ _ O O
+2 akşam I-ADVP I-ADVP _ _ O O
+3 müdürün B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 değerlendirdiği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 verileri I-NP I-NP _ _ O O
+6 projenin B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 onaylandığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 teslim B-VP B-VP _ _ O O
+9 etti I-VP I-VP _ _ O O
+10 . O O _ _ O O
+
+1 tabloyu B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 yarın I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 düzenleyen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 araştırmacı I-NP I-NP _ _ O O
+5 toplantıda B-NP B-NP _ _ O O
+6 düzenledi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 dün B-ADVP B-ADVP _ _ O O
+2 akşam I-ADVP I-ADVP _ _ O O
+3 yazarın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 anlattığı I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 raporu I-NP I-NP _ _ O O
+6 deneyin B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 bittiğini B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 not B-VP B-VP _ _ O O
+9 aldı I-VP I-VP _ _ O O
+10 . O O _ _ O O
+
+1 Hemşire B-NP B-NP _ _ O O
+2 raporu B-NP B-NP _ _ O O
+3 yardım B-VP B-VP _ _ O O
+4 etti I-VP I-VP _ _ O O
 5 . O O _ _ O O
+
+1 Çocuk B-NP B-NP _ _ O O
+2 sonucun B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 yeterli B-NP B-NP _ _ I-COMPCL I-COMPCL
+4 olduğunu B-VP B-VP _ _ I-COMPCL I-COMPCL
+5 sessizce B-ADVP B-ADVP _ _ O O
+6 gördük B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 yarın B-ADVP B-ADVP _ _ O O
+2 sabah I-ADVP I-ADVP _ _ O O
+3 Programcı B-NP B-NP _ _ O O
+4 laboratuvarda B-NP B-NP _ _ O O
+5 gitti B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 Komisyon B-NP B-NP _ _ O O
+2 belgeyi B-NP B-NP _ _ O O
+3 titizlikle B-ADVP B-ADVP _ _ O O
+4 fark B-VP B-VP _ _ O O
+5 etti I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 dün B-ADVP B-ADVP _ _ O O
+2 akşam I-ADVP I-ADVP _ _ O O
+3 hocanın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 sunduğu I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 raporu I-NP I-NP _ _ O O
+6 Ayşe B-NP B-NP _ _ O O
+7 paylaştı B-VP B-VP _ _ O O
+8 . O O _ _ O O
+
+1 dün B-ADVP B-ADVP _ _ O O
+2 akşam I-ADVP I-ADVP _ _ O O
+3 Doktor B-NP B-NP _ _ O O
+4 kütüphanede B-NP B-NP _ _ O O
+5 dün B-ADVP B-ADVP _ _ O O
+6 gitti B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 gazetecinin B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 yazdığı I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 öneriyi I-NP I-NP _ _ O O
+4 Ayşe B-NP B-NP _ _ O O
+5 paylaştı B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 danışmanın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 bulduğu I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 öneriyi I-NP I-NP _ _ O O
+4 Ali B-NP B-NP _ _ O O
+5 yazdı B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 ekibin B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 incelediği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 raporu I-NP I-NP _ _ O O
+4 Hemşire B-NP B-NP _ _ O O
+5 yazdı B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 sonuçları B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 açıkça I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 hazırlayan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 uzman I-NP I-NP _ _ O O
+5 bahçede B-NP B-NP _ _ O O
+6 döndü B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Hemşire B-NP B-NP _ _ O O
+2 metni B-NP B-NP _ _ O O
+3 kayıt B-VP B-VP _ _ O O
+4 yaptı I-VP I-VP _ _ O O
+5 . O O _ _ O O
+
+1 Avukat B-NP B-NP _ _ O O
+2 başvuruyu B-NP B-NP _ _ O O
+3 teslim B-VP B-VP _ _ O O
+4 etti I-VP I-VP _ _ O O
+5 . O O _ _ O O
+
+1 programcının B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 yazdığı I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 dosyayı I-NP I-NP _ _ O O
+4 Öğrenci B-NP B-NP _ _ O O
+5 bugün B-ADVP B-ADVP _ _ O O
+6 değerlendirdi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 makaleyi B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 hemen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 okuyan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 çocuk I-NP I-NP _ _ O O
+5 sınıfta B-NP B-NP _ _ O O
+6 tartıştı B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Ayşe B-NP B-NP _ _ O O
+2 raporu B-NP B-NP _ _ O O
+3 hemen B-ADVP B-ADVP _ _ O O
+4 tamamladı B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 sabah B-ADVP B-ADVP _ _ O O
+2 erken I-ADVP I-ADVP _ _ O O
+3 Gazeteci B-NP B-NP _ _ O O
+4 öneriyi B-NP B-NP _ _ O O
+5 sessizce B-ADVP B-ADVP _ _ O O
+6 sundu B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 dün B-ADVP B-ADVP _ _ O O
+2 akşam I-ADVP I-ADVP _ _ O O
+3 Ekip B-NP B-NP _ _ O O
+4 bahçeye B-NP B-NP _ _ O O
+5 ayrıntılı B-ADVP B-ADVP _ _ O O
+6 geldi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Mühendis B-NP B-NP _ _ O O
+2 başvurunun B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 onaylandığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+4 hızlıca B-ADVP B-ADVP _ _ O O
+5 anladık B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 Yazar B-NP B-NP _ _ O O
+2 verileri B-NP B-NP _ _ O O
+3 not B-VP B-VP _ _ O O
+4 aldı I-VP I-VP _ _ O O
+5 . O O _ _ O O
+
+1 Danışman B-NP B-NP _ _ O O
+2 bahçede B-NP B-NP _ _ O O
+3 uğradı B-VP B-VP _ _ O O
+4 . O O _ _ O O
+
+1 geçen B-ADVP B-ADVP _ _ O O
+2 hafta I-ADVP I-ADVP _ _ O O
+3 danışmanın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 düzenlediği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 konuyu I-NP I-NP _ _ O O
+6 Avukat B-NP B-NP _ _ O O
+7 hemen B-ADVP B-ADVP _ _ O O
+8 sundu B-VP B-VP _ _ O O
+9 . O O _ _ O O
+
+1 Gazeteci B-NP B-NP _ _ O O
+2 tabloyu B-NP B-NP _ _ O O
+3 titizlikle B-ADVP B-ADVP _ _ O O
+4 kontrol B-VP B-VP _ _ O O
+5 etti I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 Ekip B-NP B-NP _ _ O O
+2 kitabı B-NP B-NP _ _ O O
+3 yarın B-ADVP B-ADVP _ _ O O
+4 gönderdi B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 Hemşire B-NP B-NP _ _ O O
+2 belgeyi B-NP B-NP _ _ O O
+3 dikkatlice B-ADVP B-ADVP _ _ O O
+4 inceledi B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 Ayşe B-NP B-NP _ _ O O
+2 makaleyi B-NP B-NP _ _ O O
+3 tamamladı B-VP B-VP _ _ O O
+4 . O O _ _ O O
+
+1 geçen B-ADVP B-ADVP _ _ O O
+2 hafta I-ADVP I-ADVP _ _ O O
+3 Çevirmen B-NP B-NP _ _ O O
+4 kütüphanede B-NP B-NP _ _ O O
+5 hızlıca B-ADVP B-ADVP _ _ O O
+6 yetişti B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 dün B-ADVP B-ADVP _ _ O O
+2 akşam I-ADVP I-ADVP _ _ O O
+3 Gazeteci B-NP B-NP _ _ O O
+4 merkezde B-NP B-NP _ _ O O
+5 çıktı B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 Öğrenci B-NP B-NP _ _ O O
+2 tabloyu B-NP B-NP _ _ O O
+3 yarın B-ADVP B-ADVP _ _ O O
+4 teslim B-VP B-VP _ _ O O
+5 etti I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 Mühendis B-NP B-NP _ _ O O
+2 ofiste B-NP B-NP _ _ O O
+3 dün B-ADVP B-ADVP _ _ O O
+4 uğradı B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 geçen B-ADVP B-ADVP _ _ O O
+2 hafta I-ADVP I-ADVP _ _ O O
+3 Avukat B-NP B-NP _ _ O O
+4 taslağı B-NP B-NP _ _ O O
+5 sundu B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 bugün B-ADVP B-ADVP _ _ O O
+2 öğleden I-ADVP I-ADVP _ _ O O
+3 sonra I-ADVP I-ADVP _ _ O O
+4 doktorun B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+5 yazdığı I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+6 öneriyi I-NP I-NP _ _ O O
+7 raporun B-NP B-NP _ _ B-COMPCL B-COMPCL
+8 bittiğini B-VP B-VP _ _ I-COMPCL I-COMPCL
+9 kontrol B-VP B-VP _ _ O O
+10 etti I-VP I-VP _ _ O O
+11 . O O _ _ O O
+
+1 belgeyi B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 titizlikle I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 düzenleyen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 araştırmacı I-NP I-NP _ _ O O
+5 laboratuvarda B-NP B-NP _ _ O O
+6 yazdı B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Ayşe B-NP B-NP _ _ O O
+2 metni B-NP B-NP _ _ O O
+3 yeniden B-ADVP B-ADVP _ _ O O
+4 kayıt B-VP B-VP _ _ O O
+5 yaptı I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 geçen B-ADVP B-ADVP _ _ O O
+2 hafta I-ADVP I-ADVP _ _ O O
+3 programcının B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 değerlendirdiği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 sonuçları I-NP I-NP _ _ O O
+6 metnin B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 hazırlandığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 not B-VP B-VP _ _ O O
+9 aldı I-VP I-VP _ _ O O
+10 . O O _ _ O O
+
+1 Müdür B-NP B-NP _ _ O O
+2 başvurunun B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 başladığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+4 duyduk B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 Uzman B-NP B-NP _ _ O O
+2 okula B-NP B-NP _ _ O O
+3 ilerledi B-VP B-VP _ _ O O
+4 . O O _ _ O O
+
+1 bu B-ADVP B-ADVP _ _ O O
+2 sabah I-ADVP I-ADVP _ _ O O
+3 hocanın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 değerlendirdiği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 verileri I-NP I-NP _ _ O O
+6 modelin B-NP B-NP _ _ B-COMPCL B-COMPCL
+7 değiştiğini B-VP B-VP _ _ I-COMPCL I-COMPCL
+8 kayıt B-VP B-VP _ _ O O
+9 yaptı I-VP I-VP _ _ O O
+10 . O O _ _ O O
+
+1 Danışman B-NP B-NP _ _ O O
+2 kitabı B-NP B-NP _ _ O O
+3 hemen B-ADVP B-ADVP _ _ O O
+4 kayıt B-VP B-VP _ _ O O
+5 yaptı I-VP I-VP _ _ O O
+6 . O O _ _ O O
+
+1 Sekreter B-NP B-NP _ _ O O
+2 modelin B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 hazırlandığını B-VP B-VP _ _ I-COMPCL I-COMPCL
+4 açıkladı B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 Araştırmacı B-NP B-NP _ _ O O
+2 toplantının B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 yeterli B-NP B-NP _ _ I-COMPCL I-COMPCL
+4 olduğunu B-VP B-VP _ _ I-COMPCL I-COMPCL
+5 açıkladı B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 tabloyu B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 dün I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 okuyan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 mühendis I-NP I-NP _ _ O O
+5 hastanede B-NP B-NP _ _ O O
+6 inceledi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 bugün B-ADVP B-ADVP _ _ O O
+2 öğleden I-ADVP I-ADVP _ _ O O
+3 sonra I-ADVP I-ADVP _ _ O O
+4 Programcı B-NP B-NP _ _ O O
+5 sınıfa B-NP B-NP _ _ O O
+6 çıktı B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Hemşire B-NP B-NP _ _ O O
+2 planın B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 uygun B-NP B-NP _ _ I-COMPCL I-COMPCL
+4 olduğunu B-VP B-VP _ _ I-COMPCL I-COMPCL
+5 bugün B-ADVP B-ADVP _ _ O O
+6 fark B-VP B-VP _ _ O O
+7 etti I-VP I-VP _ _ O O
+8 . O O _ _ O O
+
+1 akşam B-ADVP B-ADVP _ _ O O
+2 geç I-ADVP I-ADVP _ _ O O
+3 Gazeteci B-NP B-NP _ _ O O
+4 laboratuvara B-NP B-NP _ _ O O
+5 titizlikle B-ADVP B-ADVP _ _ O O
+6 ilerledi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 bugün B-ADVP B-ADVP _ _ O O
+2 öğleden I-ADVP I-ADVP _ _ O O
+3 sonra I-ADVP I-ADVP _ _ O O
+4 Avukat B-NP B-NP _ _ O O
+5 laboratuvara B-NP B-NP _ _ O O
+6 dikkatlice B-ADVP B-ADVP _ _ O O
+7 yetişti B-VP B-VP _ _ O O
+8 . O O _ _ O O
+
+1 Sekreter B-NP B-NP _ _ O O
+2 hastanede B-NP B-NP _ _ O O
+3 dün B-ADVP B-ADVP _ _ O O
+4 yetişti B-VP B-VP _ _ O O
+5 . O O _ _ O O
+
+1 Araştırmacı B-NP B-NP _ _ O O
+2 belgeyi B-NP B-NP _ _ O O
+3 düzenledi B-VP B-VP _ _ O O
+4 . O O _ _ O O
+
+1 Öğrenci B-NP B-NP _ _ O O
+2 projenin B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 yeterli B-NP B-NP _ _ I-COMPCL I-COMPCL
+4 olduğunu B-VP B-VP _ _ I-COMPCL I-COMPCL
+5 fark B-VP B-VP _ _ O O
+6 etti I-VP I-VP _ _ O O
+7 . O O _ _ O O
+
+1 Öğretmen B-NP B-NP _ _ O O
+2 metni B-NP B-NP _ _ O O
+3 tamamladı B-VP B-VP _ _ O O
+4 . O O _ _ O O
+
+1 bugün B-ADVP B-ADVP _ _ O O
+2 öğleden I-ADVP I-ADVP _ _ O O
+3 sonra I-ADVP I-ADVP _ _ O O
+4 Sekreter B-NP B-NP _ _ O O
+5 metni B-NP B-NP _ _ O O
+6 düzenledi B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 taslağı B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 hızlıca I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 inceleyen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 yazar I-NP I-NP _ _ O O
+5 salonda B-NP B-NP _ _ O O
+6 paylaştı B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 Doktor B-NP B-NP _ _ O O
+2 projeyi B-NP B-NP _ _ O O
+3 teslim B-VP B-VP _ _ O O
+4 etti I-VP I-VP _ _ O O
+5 . O O _ _ O O
+
+1 Gazeteci B-NP B-NP _ _ O O
+2 deneyin B-NP B-NP _ _ B-COMPCL B-COMPCL
+3 anlaşılır B-NP B-NP _ _ I-COMPCL I-COMPCL
+4 olduğunu B-VP B-VP _ _ I-COMPCL I-COMPCL
+5 duyduk B-VP B-VP _ _ O O
+6 . O O _ _ O O
+
+1 sonuçları B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 hemen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 hazırlayan I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 uzman I-NP I-NP _ _ O O
+5 okulda B-NP B-NP _ _ O O
+6 gitti B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 kitabı B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+2 sessizce I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+3 inceleyen I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+4 yazar I-NP I-NP _ _ O O
+5 bahçede B-NP B-NP _ _ O O
+6 duyurdu B-VP B-VP _ _ O O
+7 . O O _ _ O O
+
+1 bu B-ADVP B-ADVP _ _ O O
+2 sabah I-ADVP I-ADVP _ _ O O
+3 yazarın B-NP B-NP B-RELCL B-RELCL B-RELCL B-RELCL
+4 çevirdiği I-NP I-NP I-RELCL I-RELCL I-RELCL I-RELCL
+5 dosyayı I-NP I-NP _ _ O O
+6 Komisyon B-NP B-NP _ _ O O
+7 dikkatlice B-ADVP B-NP _ _ O O
+8 değerlendirdi B-VP B-VP _ _ O O
+9 . O O _ _ O O
+
+1 bugün B-ADVP B-ADVP _ _ O O
+2 öğleden I-ADVP I-ADVP _ _ O O
+3 sonra I-ADVP I-ADVP _ _ O O
+4 Ayşe B-NP B-NP _ _ O O
+5 kitabı B-NP B-NP _ _ O O
+6 hazırladı B-VP B-VP _ _ O O
+7 . O O _ _ O O
 

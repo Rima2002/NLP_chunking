@@ -1,53 +1,53 @@
 NESTED CHUNKING PROJE SONUCLARI
 
-Test cumlesi sayisi: 12
-Test token sayisi: 74
+Test cumlesi sayisi: 80
+Test token sayisi: 543
 
 Genel basari oranlari:
 Hedef        Accuracy         Confusion matrix PNG
 -----------  --------  ---------------------------
-CHUNK-OUTER    0.8784   outer_confusion_matrix.png
-CHUNK-INNER    0.9189   inner_confusion_matrix.png
-CLAUSE         0.8919  clause_confusion_matrix.png
+CHUNK-OUTER    0.9982   outer_confusion_matrix.png
+CHUNK-INNER    1.0000   inner_confusion_matrix.png
+CLAUSE         1.0000  clause_confusion_matrix.png
 
 CHUNK-OUTER basari metrikleri
 Confusion matrix grafigi: outer_confusion_matrix.png
 
 Sinif         Precision  Recall  F-measure  Support
 ------------  ---------  ------  ---------  -------
-B-ADVP           0.7000  0.8750     0.7778        8
-B-NP             0.9048  0.7600     0.8261       25
-B-VP             0.9333  0.9333     0.9333       15
-I-ADVP           1.0000  0.6667     0.8000        3
-I-NP             0.7500  1.0000     0.8571        9
-I-VP             1.0000  1.0000     1.0000        2
-O                1.0000  1.0000     1.0000       12
-Macro avg        0.8983  0.8907     0.8849       74
-Weighted avg     0.8915  0.8784     0.8782       74
+B-ADVP           1.0000  0.9828     0.9913       58
+B-NP             0.9940  1.0000     0.9970      166
+B-VP             1.0000  1.0000     1.0000       99
+I-ADVP           1.0000  1.0000     1.0000       36
+I-NP             1.0000  1.0000     1.0000       80
+I-VP             1.0000  1.0000     1.0000       24
+O                1.0000  1.0000     1.0000       80
+Macro avg        0.9991  0.9975     0.9983      543
+Weighted avg     0.9982  0.9982     0.9982      543
 
 CHUNK-INNER basari metrikleri
 Confusion matrix grafigi: inner_confusion_matrix.png
 
 Sinif         Precision  Recall  F-measure  Support
 ------------  ---------  ------  ---------  -------
-B-RELCL          0.5000  0.3333     0.4000        6
-I-RELCL          0.6000  1.0000     0.7500        3
-_                0.9692  0.9692     0.9692       65
-Macro avg        0.6897  0.7675     0.7064       74
-Weighted avg     0.9162  0.9189     0.9142       74
+B-RELCL          1.0000  1.0000     1.0000       33
+I-RELCL          1.0000  1.0000     1.0000       47
+_                1.0000  1.0000     1.0000      463
+Macro avg        1.0000  1.0000     1.0000      543
+Weighted avg     1.0000  1.0000     1.0000      543
 
 CLAUSE basari metrikleri
 Confusion matrix grafigi: clause_confusion_matrix.png
 
 Sinif         Precision  Recall  F-measure  Support
 ------------  ---------  ------  ---------  -------
-B-COMPCL         1.0000  0.3333     0.5000        3
-B-RELCL          0.5000  0.3333     0.4000        6
-I-COMPCL         1.0000  1.0000     1.0000        1
-I-RELCL          0.6000  1.0000     0.7500        3
-O                0.9365  0.9672     0.9516       61
-Macro avg        0.8073  0.7268     0.7203       74
-Weighted avg     0.8909  0.8919     0.8811       74
+B-COMPCL         1.0000  1.0000     1.0000       19
+B-RELCL          1.0000  1.0000     1.0000       33
+I-COMPCL         1.0000  1.0000     1.0000       25
+I-RELCL          1.0000  1.0000     1.0000       47
+O                1.0000  1.0000     1.0000      419
+Macro avg        1.0000  1.0000     1.0000      543
+Weighted avg     1.0000  1.0000     1.0000      543
 
 Birlesik confusion matrix grafigi: all_confusion_matrices.png
 Markdown raporu: evaluation_report.md

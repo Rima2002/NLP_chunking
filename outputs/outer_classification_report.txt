@@ -1,6 +1,6 @@
 # CHUNK-OUTER Classification Report
 
-Accuracy: `0.8784`
+Accuracy: `0.9982`
 
 Kullanilan etiketler:
 
@@ -10,24 +10,24 @@ B-ADVP, B-NP, B-VP, I-ADVP, I-NP, I-VP, O
 
 Sinif         Precision  Recall  F-measure  Support
 ------------  ---------  ------  ---------  -------
-B-ADVP           0.7000  0.8750     0.7778        8
-B-NP             0.9048  0.7600     0.8261       25
-B-VP             0.9333  0.9333     0.9333       15
-I-ADVP           1.0000  0.6667     0.8000        3
-I-NP             0.7500  1.0000     0.8571        9
-I-VP             1.0000  1.0000     1.0000        2
-O                1.0000  1.0000     1.0000       12
-Macro avg        0.8983  0.8907     0.8849       74
-Weighted avg     0.8915  0.8784     0.8782       74
+B-ADVP           1.0000  0.9828     0.9913       58
+B-NP             0.9940  1.0000     0.9970      166
+B-VP             1.0000  1.0000     1.0000       99
+I-ADVP           1.0000  1.0000     1.0000       36
+I-NP             1.0000  1.0000     1.0000       80
+I-VP             1.0000  1.0000     1.0000       24
+O                1.0000  1.0000     1.0000       80
+Macro avg        0.9991  0.9975     0.9983      543
+Weighted avg     0.9982  0.9982     0.9982      543
 
 ## Confusion Matrix Sayisal Tablo
 
 Gercek \ Tahmin  B-ADVP  B-NP  B-VP  I-ADVP  I-NP  I-VP   O
 ---------------  ------  ----  ----  ------  ----  ----  --
-B-ADVP                7     1     0       0     0     0   0
-B-NP                  3    19     1       0     2     0   0
-B-VP                  0     1    14       0     0     0   0
-I-ADVP                0     0     0       2     1     0   0
-I-NP                  0     0     0       0     9     0   0
-I-VP                  0     0     0       0     0     2   0
-O                     0     0     0       0     0     0  12
+B-ADVP               57     1     0       0     0     0   0
+B-NP                  0   166     0       0     0     0   0
+B-VP                  0     0    99       0     0     0   0
+I-ADVP                0     0     0      36     0     0   0
+I-NP                  0     0     0       0    80     0   0
+I-VP                  0     0     0       0     0    24   0
+O                     0     0     0       0     0     0  80
