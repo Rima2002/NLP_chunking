@@ -89,6 +89,29 @@ Gerekli kütüphaneleri kurun:
 pip install -r requirements.txt
 ```
 
+## PROGRAMIN ÇALIŞTIRILMASI
+
+Programı çalıştırmak için önce eğitim komutu ile CRF modellerini oluşturun:
+
+```powershell
+python src\train.py
+```
+
+Eğitim tamamlandıktan sonra test verisi üzerinde değerlendirme ve rapor üretmek için:
+
+```powershell
+python src\evaluate.py
+```
+
+Yeni bir Türkçe cümle için nested chunking tahmini almak isterseniz:
+
+```powershell
+python src\predict.py
+```
+
+`evaluate.py` çalıştırıldığında başarı oranları terminalde gösterilir ve ayrıntılı
+sonuç dosyaları `outputs/` klasörüne kaydedilir.
+
 ## Eğitim
 
 ```powershell
